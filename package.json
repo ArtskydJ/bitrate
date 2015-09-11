@@ -7,7 +7,7 @@
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
-  "description": "",
+  "description": "Calculates the bitrate given a file's size and duration",
   "keywords": [
     "bitrate",
     "bytes",
