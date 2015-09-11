@@ -1,0 +1,27 @@
+{
+  "name": "bitrate",
+  "version": "",
+  "main": "./index.js",
+  "license": "VOL",
+  "author": {
+    "name": "ArtskydJ",
+    "email": "josephdykstra@gmail.com"
+  },
+  "description": "",
+  "keywords": [
+    "bitrate",
+    "bytes",
+    "duration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtskydJ/"
+  },
+  "scripts": {
+    "test": "tape ./test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
