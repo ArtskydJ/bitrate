@@ -12,9 +12,9 @@ bitrate
 ```js
 var bitrate = require('bitrate')
 
-var rate1 = bitrate(6076940, 149) // => 326.3
-var rate2 = bitrate(6076940, 149, 'bps') // => 326279
-var rate3 = bitrate(6076940, 149, 'Bps') // => 40785
+var kilobitsPerSecond = bitrate(6076940, 149) // => 326.3
+var bitsPerSecond = bitrate(6076940, 149, 'bps') // => 326279
+var BytesPerSecond = bitrate(6076940, 149, 'Bps') // => 40785
 ```
 
 # api
@@ -23,7 +23,7 @@ var rate3 = bitrate(6076940, 149, 'Bps') // => 40785
 var bitrate = require('bitrate')
 ```
 
-# `var rate = bitrate(bytes, seconds, [format])`
+## `var rate = bitrate(bytes, seconds, [format])`
 
 - `bytes` is the number in bytes
 - `seconds` is the duration in seconds
