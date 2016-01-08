@@ -11,7 +11,10 @@
   "keywords": [
     "bitrate",
     "bytes",
-    "duration"
+    "duration",
+    "bit",
+    "rate",
+    "bit rate"
   ],
   "repository": {
     "type": "git",
