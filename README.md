@@ -1,20 +1,21 @@
 bitrate
 =========
 
-[![Build Status](https://travis-ci.org/ArtskydJ/bitrate.svg)](https://travis-ci.org/ArtskydJ/bitrate)
-[![Dependency Status](https://david-dm.org/artskydj/bitrate.svg)](https://david-dm.org/artskydj/bitrate)
-[![devDependency Status](https://david-dm.org/artskydj/bitrate/dev-status.svg)](https://david-dm.org/artskydj/bitrate#info=devDependencies)
-
 > Calculates the bitrate given a file's size and duration
+
+[![Build Status](https://travis-ci.org/ArtskydJ/bitrate.svg)](https://travis-ci.org/ArtskydJ/bitrate)
 
 # example
 
 ```js
 var bitrate = require('bitrate')
 
-var kilobitsPerSecond = bitrate(6076940, 149) // => 326.3
-var bitsPerSecond = bitrate(6076940, 149, 'bps') // => 326279
-var BytesPerSecond = bitrate(6076940, 149, 'Bps') // => 40785
+var bytes = 6076940
+var seconds = 149
+
+var kilobitsPerSecond = bitrate(bytes, seconds) // => 326.3
+var bitsPerSecond = bitrate(bytes, seconds, 'bps') // => 326279
+var BytesPerSecond = bitrate(bytes, seconds, 'Bps') // => 40785
 ```
 
 # api
@@ -26,8 +27,8 @@ var bitrate = require('bitrate')
 ## `var rate = bitrate(bytes, seconds, [format])`
 
 - `bytes` is the number in bytes
-- `seconds` is the duration in seconds
-- `format` is the desired format. Accepts:
+- `seconds` is the number in seconds of the duration
+- `format` is a string of the desired format. Accepts:
 	- `bps`, `b/s`; bits per second
 	- `kbps`, `kb/s`; kilobits per second **default**
 	- `mbps`, `mb/s`; megabits per second
