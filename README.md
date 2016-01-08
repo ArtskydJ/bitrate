@@ -26,8 +26,8 @@ var bitrate = require('bitrate')
 
 ## `var rate = bitrate(bytes, seconds, [format])`
 
-- `bytes` is the number in bytes
-- `seconds` is the number in seconds of the duration
+- `bytes` is a number of bytes
+- `seconds` is a number of the duration in seconds
 - `format` is a string of the desired format. Accepts:
 	- `bps`, `b/s`; bits per second
 	- `kbps`, `kb/s`; kilobits per second **default**
